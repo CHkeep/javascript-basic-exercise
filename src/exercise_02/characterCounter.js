@@ -12,5 +12,4 @@ export default function countCharacter(string, prediction) {
   if (string.length && prediction === undefined) {
     return string.length;
   }
-
 }
