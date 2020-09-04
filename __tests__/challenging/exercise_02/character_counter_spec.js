@@ -15,7 +15,7 @@ describe('for count character', () => {
     expect(countCharacter('hello')).toEqual('hello'.length);
   });
 
-  // it('should return number of characters satisfied', () => {
-  //   expect(countCharacter('hello', c => c === 'l')).toEqual(2);
-  // });
+  it('should return number of characters satisfied', () => {
+    expect(countCharacter('hello', c => c === 'l')).toEqual(2);
+  });
 });

@@ -12,4 +12,13 @@ export default function countCharacter(string, prediction) {
   if (string.length && prediction === undefined) {
     return string.length;
   }
+
+  let count = 0;
+  // eslint-disable-next-line no-plusplus
+  for (let i = 0; i < string.length; i++) {
+    if (prediction(string[i])) {
+      count += 1;
+    };
+  }
+  return count;
 }
